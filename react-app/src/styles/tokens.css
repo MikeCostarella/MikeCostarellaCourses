@@ -1,0 +1,27 @@
+/* Design tokens — mirroring the OhioCounties convention of a tokens file
+   feeding a global stylesheet. */
+:root {
+  --ink: #1c2733;
+  --ink-2: #46586a;
+  --text-muted: #6b7d8f;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --border: #dde5ec;
+  --brand: #3b2a5a;
+  --brand-ink: #eaf1f8;
+  --accent: #6b4fa0;
+  --accent-dark: #4f3a7a;
+  --lab: #2f7a44;
+  --lab-bg: #eef7f0;
+  --cp: #b8860b;
+  --cp-bg: #fff7ed;
+  --code-bg: #0f1822;
+  --code-ink: #d7e2ec;
+  --code-comment: #7d94a8;
+  --code-string: #9ecf8a;
+  --code-keyword: #7cb8ec;
+  --code-number: #e3b567;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(16, 32, 48, 0.08), 0 4px 14px rgba(16, 32, 48, 0.06);
+  --sidebar-w: 300px;
+}
