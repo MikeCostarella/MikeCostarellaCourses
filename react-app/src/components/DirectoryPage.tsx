@@ -11,7 +11,6 @@ export default function DirectoryPage() {
 
   return (
     <article className="home">
-      <p className="kicker">Costarella Innovations, LLC</p>
       <h1>{SITE.heading}</h1>
       <p className="tagline">{SITE.tagline}</p>
       <p>{SITE.intro}</p>

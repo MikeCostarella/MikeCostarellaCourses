@@ -5,10 +5,10 @@ export default function CoursePage({ course }: { course: CourseDef }) {
   return (
     <article className="module-page">
       <div className="crumbs">
-        <a href="#/">Directory</a> <span>›</span> {course.institution}
+        <a href="#/">Directory</a> <span>›</span> {course.institution ?? course.title}
       </div>
       <h1>
-        <span className="mod-no">{course.number ?? course.institution} · {course.term}</span>
+        <span className="mod-no">{[course.number ?? course.institution, course.term].filter(Boolean).join(" · ")}</span>
         {course.title}
       </h1>
       <p className="mod-subtitle">

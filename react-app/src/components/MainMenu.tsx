@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { COURSES, INSTITUTIONS, repoUrl } from "../data/courses";
+import { COURSES, INSTITUTIONS, UNAFFILIATED, repoUrl } from "../data/courses";
 import { SITE } from "../data/site";
 import BuildStamp from "./BuildStamp";
 
@@ -76,6 +76,21 @@ export default function MainMenu() {
               </div>
             );
           })}
+
+          {UNAFFILIATED.length > 0 && (
+            <div className="acc-section">
+              {head("other", "Other courses")}
+              {section === "other" && (
+                <div className="acc-body">
+                  {UNAFFILIATED.map((c) => (
+                    <a key={c.id} href={`#/c/${c.id}`}>
+                      {c.number ? `${c.number} · ` : ""}{c.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
           <div className="acc-section">
             {head("repos", "Repositories")}

@@ -29,7 +29,6 @@ export const COURSES: CourseDef[] = [
   {
     id: "python",
     title: "Python Programming",
-    institution: "Costarella Innovations, LLC",
     term: "Not yet scheduled",
     status: "proposed",
     credits: "3 s.h.",
@@ -42,7 +41,6 @@ export const COURSES: CourseDef[] = [
   {
     id: "analytics",
     title: "Intro to Data Analytics",
-    institution: "Costarella Innovations, LLC",
     term: "Not yet scheduled",
     status: "proposed",
     credits: "3 s.h.",
@@ -55,7 +53,6 @@ export const COURSES: CourseDef[] = [
   {
     id: "gcloud",
     title: "Building Services in Google Cloud",
-    institution: "Costarella Innovations, LLC",
     term: "Self-paced",
     status: "designed",
     summary:
@@ -76,7 +73,10 @@ export const STATUS_ORDER: CourseStatus[] = ["teaching", "proposed", "designed",
 
 export const COURSE_BY_ID: Record<string, CourseDef> = Object.fromEntries(COURSES.map((c) => [c.id, c]));
 
-export const INSTITUTIONS = Array.from(new Set(COURSES.map((c) => c.institution)));
+export const INSTITUTIONS = Array.from(new Set(COURSES.flatMap((c) => (c.institution ? [c.institution] : []))));
+
+/** Courses not tied to an institution (proposed or self-paced). */
+export const UNAFFILIATED = COURSES.filter((c) => !c.institution);
 
 export const REPO_COUNT = COURSES.reduce((n, c) => n + 1 + (c.related?.length ?? 0), 0);
 

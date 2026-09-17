@@ -5,7 +5,7 @@ export default function CourseCard({ course }: { course: CourseDef }) {
   return (
     <article className={"course-card status-" + course.status}>
       <div className="cc-top">
-        <span className="cc-inst">{course.institution}</span>
+        <span className="cc-inst">{course.institution ?? ""}</span>
         <span className={"tag tag-" + course.status}>{STATUS_LABEL[course.status]}</span>
       </div>
       <h2 className="cc-title">

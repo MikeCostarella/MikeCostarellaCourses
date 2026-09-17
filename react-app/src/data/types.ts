@@ -19,7 +19,8 @@ export interface CourseDef {
   title: string;
   /** Catalog number(s), e.g. "CSCI 145". */
   number?: string;
-  institution: string;
+  /** Omitted for courses not yet tied to a school. */
+  institution?: string;
   /** Term, e.g. "Fall 2026", or "Self-paced". */
   term: string;
   status: CourseStatus;
