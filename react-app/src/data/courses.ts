@@ -28,7 +28,7 @@ export const COURSES: CourseDef[] = [
   },
   {
     id: "agentic-ai",
-    title: "Agentic AI and Intelligent Systems",
+    title: "Agentic AI Foundations",
     term: "Not yet scheduled",
     status: "proposed",
     draft: true,
