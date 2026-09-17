@@ -27,6 +27,18 @@ export const COURSES: CourseDef[] = [
     tags: ["YSU", "graduate", "software engineering", "Git", "TypeScript"],
   },
   {
+    id: "agentic-ai",
+    title: "Agentic AI and Intelligent Systems",
+    term: "Not yet scheduled",
+    status: "proposed",
+    credits: "3 s.h.",
+    summary:
+      "An upper-level undergraduate / graduate course that goes beyond prompt engineering to building agentic systems: LLM foundations for engineers, structured output, tool calling and the agent loop, retrieval and memory, the Model Context Protocol, multi-agent orchestration, AI-assisted software engineering, evaluation, and security and responsible use. Thirteen modules over fifteen weeks, twelve labs, a midterm checkpoint, and evaluated team final projects.",
+    siteUrl: `${PAGES}/CS_AgenticAIFoundations/`,
+    repo: "CS_AgenticAIFoundations",
+    tags: ["undergraduate", "graduate", "agentic AI", "LLMs", "MCP"],
+  },
+  {
     id: "python",
     title: "Python Programming",
     term: "Not yet scheduled",
