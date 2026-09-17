@@ -6,7 +6,10 @@ export default function CourseCard({ course }: { course: CourseDef }) {
     <article className={"course-card status-" + course.status}>
       <div className="cc-top">
         <span className="cc-inst">{course.institution ?? ""}</span>
-        <span className={"tag tag-" + course.status}>{STATUS_LABEL[course.status]}</span>
+        <span className="cc-tagset">
+          {course.draft && <span className="tag tag-draft">Draft</span>}
+          <span className={"tag tag-" + course.status}>{STATUS_LABEL[course.status]}</span>
+        </span>
       </div>
       <h2 className="cc-title">
         <a href={`#/c/${course.id}`}>

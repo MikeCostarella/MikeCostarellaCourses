@@ -31,6 +31,7 @@ export const COURSES: CourseDef[] = [
     title: "Agentic AI and Intelligent Systems",
     term: "Not yet scheduled",
     status: "proposed",
+    draft: true,
     credits: "3 s.h.",
     summary:
       "An upper-level undergraduate / graduate course that goes beyond prompt engineering to building agentic systems: LLM foundations for engineers, structured output, tool calling and the agent loop, retrieval and memory, the Model Context Protocol, multi-agent orchestration, AI-assisted software engineering, evaluation, and security and responsible use. Thirteen modules over fifteen weeks, twelve labs, a midterm checkpoint, and evaluated team final projects.",
@@ -43,6 +44,7 @@ export const COURSES: CourseDef[] = [
     title: "Python Programming",
     term: "Not yet scheduled",
     status: "proposed",
+    draft: true,
     credits: "3 s.h.",
     summary:
       "An introductory programming course in Python, no prior programming assumed. Variables, control flow, functions, strings, lists and dictionaries, files and exceptions, modules and virtual environments, testing and style, classes, CSV/JSON, and a capstone project. Fourteen modules, a lab every week, two project checkpoints instead of exams.",
@@ -55,6 +57,7 @@ export const COURSES: CourseDef[] = [
     title: "Intro to Data Analytics",
     term: "Not yet scheduled",
     status: "proposed",
+    draft: true,
     credits: "3 s.h.",
     summary:
       "An overview of the field with a business focus and no prerequisite. Spreadsheet first — tidy data, pivots, descriptive statistics, visualization, time series — then Python notebooks in Colab for cleaning, EDA, inference, regression, classification, clustering, and association rules. Ends with a dashboard and a findings-first capstone presentation.",
@@ -67,6 +70,7 @@ export const COURSES: CourseDef[] = [
     title: "Building Services in Google Cloud",
     term: "Self-paced",
     status: "designed",
+    draft: true,
     summary:
       "A self-paced course in which you build a React + TypeScript client and the Google Cloud service it calls — a Fastify + TypeScript API on Cloud Run — developed together, deployed separately, joined by one contract. Design of record; the premise comes from the Statehouse fleet's static-data architecture and what it would take to give it a live backend.",
     repo: "MyGoogleCloudAPICourse",

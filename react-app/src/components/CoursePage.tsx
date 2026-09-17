@@ -12,6 +12,7 @@ export default function CoursePage({ course }: { course: CourseDef }) {
         {course.title}
       </h1>
       <p className="mod-subtitle">
+        {course.draft && <><span className="tag tag-draft">Draft</span>{" "}</>}
         <span className={"tag tag-" + course.status}>{STATUS_LABEL[course.status]}</span>
         {course.credits && <> · {course.credits}</>}
       </p>

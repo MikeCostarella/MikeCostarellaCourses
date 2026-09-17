@@ -24,6 +24,8 @@ export interface CourseDef {
   /** Term, e.g. "Fall 2026", or "Self-paced". */
   term: string;
   status: CourseStatus;
+  /** Draft course design, not an offered course — shows a DRAFT label. */
+  draft?: boolean;
   credits?: string;
   /** One-paragraph description. */
   summary: string;

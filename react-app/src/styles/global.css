@@ -509,4 +509,6 @@ h2 { font-size: 1.18rem; margin: 0 0 10px; }
 .tag-proposed { background: var(--cp-bg); color: var(--cp); }
 .tag-designed { background: #efeaf7; color: var(--accent-dark); }
 .tag-archived { background: #eee; color: var(--text-muted); }
+.tag-draft { background: #fdecec; color: #b42318; border: 1px dashed #e8a3a3; }
+.cc-tagset { display: inline-flex; gap: 6px; align-items: center; flex-shrink: 0; }
 .mod-subtitle .tag { vertical-align: middle; }
