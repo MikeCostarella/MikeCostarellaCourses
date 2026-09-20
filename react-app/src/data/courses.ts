@@ -66,6 +66,20 @@ export const COURSES: CourseDef[] = [
     tags: ["undergraduate", "analytics", "statistics", "pandas"],
   },
   {
+    id: "intro-aiml",
+    title: "Introduction to AI/ML",
+    term: "Self-directed",
+    status: "designed",
+    summary:
+      "A self-directed course on what machine learning actually is, how a neural network learns, and how a large language model comes to exist — written to be the prerequisite for Agentic AI Foundations, which lists an introductory AI/ML course as recommended background. Eighteen modules, twenty-six lab sittings, from learning-from-data and honest evaluation through networks written from scratch in numpy to attention and how an LLM is trained. Every excerpt is a runnable file: numpy and scikit-learn, no GPU and no API key.",
+    siteUrl: `${PAGES}/CS_IntroductionToAIML/`,
+    repo: "CS_IntroductionToAIML",
+    related: [
+      { repo: "CS_AgenticAIFoundations", role: "The course this one prepares you for", pagesUrl: `${PAGES}/CS_AgenticAIFoundations/` },
+    ],
+    tags: ["self-paced", "machine learning", "Python", "neural networks", "LLMs"],
+  },
+  {
     id: "react-architecture",
     title: "React + TypeScript Architecture",
     term: "Self-paced",
