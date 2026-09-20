@@ -66,6 +66,17 @@ export const COURSES: CourseDef[] = [
     tags: ["undergraduate", "analytics", "statistics", "pandas"],
   },
   {
+    id: "react-architecture",
+    title: "React + TypeScript Architecture",
+    term: "Self-paced",
+    status: "designed",
+    summary:
+      "A self-paced course on building a typed, registry-driven React + TypeScript application: a registry as the single source of truth with navigation, counts and search derived from it; static data with stated freshness contracts; loaders that degrade instead of throwing; scheduled pipelines that commit only when reality changed; and a build that gates on types and tests before it deploys. Sixteen modules, twenty-four lab sittings, taught from the OhioCounties fleet with every excerpt cited by path.",
+    siteUrl: `${PAGES}/CS_ReactArchitecture/`,
+    repo: "CS_ReactArchitecture",
+    tags: ["self-paced", "React", "TypeScript", "architecture", "testing"],
+  },
+  {
     id: "gcloud",
     title: "Building Services in Google Cloud",
     term: "Self-paced",
