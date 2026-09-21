@@ -91,6 +91,21 @@ export const COURSES: CourseDef[] = [
     tags: ["self-paced", "React", "TypeScript", "architecture", "testing"],
   },
   {
+    id: "github-scrum",
+    title: "GitHub Scrum Intro",
+    term: "Self-paced",
+    status: "designed",
+    draft: true,
+    summary:
+      "A course on working as a software team: five developers and a Scrum Master adopt Bullpen, a real deployed paper-trading app, and ship changes to it in two-week sprints with every piece of Scrum living on GitHub — the backlog as issues, the board as a Project, one branch and pull request per task, code review and CI in front of every merge, and a release to the live site each sprint. Fifteen modules in five units; Module 1 is written from the first lecture, the rest are outlined and filled in as they are taught.",
+    siteUrl: `${PAGES}/CS_GitHubScrumIntro/`,
+    repo: "CS_GitHubScrumIntro",
+    related: [
+      { repo: "Bullpen", role: "The adopted app every developer forks", pagesUrl: `${PAGES}/Bullpen/` },
+    ],
+    tags: ["self-paced", "Scrum", "Git", "GitHub", "teamwork"],
+  },
+  {
     id: "gcloud",
     title: "Building Services in Google Cloud",
     term: "Self-paced",
