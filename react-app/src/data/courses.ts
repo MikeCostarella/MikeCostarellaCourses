@@ -56,6 +56,20 @@ export const COURSES: CourseDef[] = [
     tags: ["undergraduate", "Python", "intro programming"],
   },
   {
+    id: "python-demo",
+    title: "Who Pays What? — Python Teaching Demo",
+    term: "30-minute demonstration",
+    status: "designed",
+    summary:
+      "A 30-minute teaching demonstration for the first weeks of an introductory Python course, built around a recreation center that charges admission by age. Plan first (Input → Process → Output), predict the tricky ages, then build the program a step at a time — input() and int(), one comparison, the full if / elif / else chain — hunt a bug that runs without errors, and finish with a function, a friendly input check, and boundary tests. The site is the deck: a slide viewer with a preview rail, speaker notes, every step's code pulled from the real .py files, a minute-by-minute run sheet, and Open-in-VS-Code links for live coding.",
+    siteUrl: `${PAGES}/CS_PythonTeachingDemo1/`,
+    repo: "CS_PythonTeachingDemo1",
+    related: [
+      { repo: "CS_PythonProgrammingCourse", role: "The course this demo is a lesson from", pagesUrl: `${PAGES}/CS_PythonProgrammingCourse/` },
+    ],
+    tags: ["teaching demo", "Python", "intro programming", "if / elif / else"],
+  },
+  {
     id: "analytics",
     title: "Intro to Data Analytics",
     term: "Not yet scheduled",
