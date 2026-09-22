@@ -50,6 +50,9 @@ export const COURSES: CourseDef[] = [
       "An introductory programming course in Python, no prior programming assumed. Variables, control flow, functions, strings, lists and dictionaries, files and exceptions, modules and virtual environments, testing and style, classes, CSV/JSON, and a capstone project. Fourteen modules, a lab every week, two project checkpoints instead of exams.",
     siteUrl: `${PAGES}/CS_PythonProgrammingCourse/`,
     repo: "CS_PythonProgrammingCourse",
+    related: [
+      { repo: "CS_PythonTeachingDemo1", role: "30-minute teaching demo: input, comparisons, if / elif / else", pagesUrl: `${PAGES}/CS_PythonTeachingDemo1/` },
+    ],
     tags: ["undergraduate", "Python", "intro programming"],
   },
   {
