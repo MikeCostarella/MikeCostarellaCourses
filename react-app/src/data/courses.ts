@@ -16,15 +16,16 @@ export const COURSES: CourseDef[] = [
     status: "teaching",
     credits: "3 s.h.",
     summary:
-      "Version control, build and make systems, CI, debuggers, testing, static and dynamic analysis, architecture, and design patterns — practiced on the Ohio Counties civic-data application and its ecosystem of 200+ per-county apps, in Windows and UNIX environments. Fourteen modules, hands-on labs, a semester project brought under professional discipline module by module.",
+      "The class is a Scrum team: five developers and a Scrum Master adopt Bullpen, a real deployed app, and ship changes to it in two-week sprints with the whole process run on GitHub — issues and a Project board, branches and pull requests, code review, Actions gating every merge, releases. Along the way: version control, build and make systems, CI, debuggers, testing, static and dynamic analysis, architecture, and design patterns, in Windows and UNIX environments. Fourteen modules, a lab every week.",
     siteUrl: `${PAGES}/MyWebSiteDevelopmentCourse/`,
     repo: "MyWebSiteDevelopmentCourse",
     related: [
+      { repo: "Bullpen", role: "The adopted app the team ships every sprint", pagesUrl: `${PAGES}/Bullpen/` },
       { repo: "CSCI5802Fall2026Student", role: "Student app (GitHub template)" },
       { repo: "CSCI5802Fall2026Management", role: "Instructor term-management app" },
       { repo: "csci5802-api-starter", role: "Starter API every student forks" },
     ],
-    tags: ["YSU", "graduate", "software engineering", "Git", "TypeScript"],
+    tags: ["YSU", "graduate", "Scrum", "GitHub", "software engineering", "TypeScript"],
   },
   {
     id: "agentic-ai",
