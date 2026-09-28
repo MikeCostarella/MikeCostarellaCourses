@@ -62,11 +62,10 @@ export default function App() {
 
       <footer className="footer">
         <span>
-          © {new Date().getFullYear()} Costarella Innovations, LLC · {SITE.author} ·{" "}
+          {SITE.author} ·{" "}
           <a className="contact-link" href={`mailto:${SITE.contactEmail}`}>
             {SITE.contactEmail}
-          </a>{" "}
-          · React + TypeScript + Vite PWA on GitHub Pages
+          </a>
         </span>
         <BuildStamp />
       </footer>

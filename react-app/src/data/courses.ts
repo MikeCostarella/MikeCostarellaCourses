@@ -93,9 +93,26 @@ export const COURSES: CourseDef[] = [
     siteUrl: `${PAGES}/CS_IntroductionToAIML/`,
     repo: "CS_IntroductionToAIML",
     related: [
+      { repo: "CS_LLMFoundations", role: "Next in the path: inside the LLM", pagesUrl: `${PAGES}/CS_LLMFoundations/` },
       { repo: "CS_AgenticAIFoundations", role: "The course this one prepares you for", pagesUrl: `${PAGES}/CS_AgenticAIFoundations/` },
     ],
     tags: ["self-paced", "machine learning", "Python", "neural networks", "LLMs"],
+  },
+  {
+    id: "llm-foundations",
+    title: "LLM Foundations",
+    term: "Self-directed",
+    status: "designed",
+    draft: true,
+    summary:
+      "A self-directed course that opens the model up: tokens and embeddings, attention and a tiny transformer built from scratch, the tricks that make real transformers fast (KV cache, RoPE, grouped-query attention, mixture of experts), decoding, pretraining and LoRA fine-tuning, alignment with RLHF and DPO, reasoning models trained with GRPO, honest evaluation including LLM-as-judge, and a bridge to tool calling and RAG. It sits between Introduction to AI/ML and Agentic AI Foundations and roughly parallels Stanford's CME 295. Nine units, a Colab lab per unit, and a capstone that takes a small model through SFT, DPO, evaluation and a model card. Math through code, no calculus.",
+    siteUrl: `${PAGES}/CS_LLMFoundations/`,
+    repo: "CS_LLMFoundations",
+    related: [
+      { repo: "CS_IntroductionToAIML", role: "The course before this one", pagesUrl: `${PAGES}/CS_IntroductionToAIML/` },
+      { repo: "CS_AgenticAIFoundations", role: "The course this one prepares you for", pagesUrl: `${PAGES}/CS_AgenticAIFoundations/` },
+    ],
+    tags: ["self-paced", "LLMs", "transformers", "fine-tuning", "PyTorch"],
   },
   {
     id: "react-architecture",

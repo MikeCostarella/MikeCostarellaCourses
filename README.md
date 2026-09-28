@@ -33,6 +33,6 @@ https://mikecostarella.github.io/MikeCostarellaCourses/
 ## Fleet conventions
 
 Hamburger accordion main menu (View / institutions / Repositories / Links),
-build timestamp in the masthead, menu foot, and footer, and the
-"© Costarella Innovations, LLC" footer. Base path in `vite.config.ts` must
+build timestamp in the masthead, menu foot, and footer. The footer carries no
+copyright line and no stack line. Base path in `vite.config.ts` must
 equal `/MikeCostarellaCourses/`.
