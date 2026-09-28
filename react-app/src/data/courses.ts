@@ -10,6 +10,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "csci5802",
     title: "Software Tools and Practices",
+    pitch: "Work on a real development team and ship to a live app every sprint.",
     number: "CSCI 5802",
     institution: "Youngstown State University",
     term: "Fall 2026",
@@ -30,6 +31,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "agentic-ai",
     title: "Agentic AI Foundations",
+    pitch: "Go past prompting and build AI agents that use tools, retrieve information, and get evaluated.",
     term: "Not yet scheduled",
     status: "proposed",
     draft: true,
@@ -43,6 +45,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "python",
     title: "Python Programming",
+    pitch: "Go from never having coded to finishing a capstone project in one semester.",
     term: "Not yet scheduled",
     status: "proposed",
     draft: true,
@@ -59,6 +62,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "python-demo",
     title: "Who Pays What? — Python Teaching Demo",
+    pitch: "A 30-minute sample lesson: plan, predict, build, and debug a real program together.",
     term: "30-minute demonstration",
     status: "designed",
     summary:
@@ -73,6 +77,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "analytics",
     title: "Intro to Data Analytics",
+    pitch: "Turn raw data into a dashboard and a presentation that leads with findings.",
     term: "Not yet scheduled",
     status: "proposed",
     draft: true,
@@ -86,6 +91,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "intro-aiml",
     title: "Introduction to AI/ML",
+    pitch: "Learn how machines learn by writing a neural network from scratch.",
     term: "Self-directed",
     status: "designed",
     summary:
@@ -101,6 +107,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "llm-foundations",
     title: "LLM Foundations",
+    pitch: "Build a small transformer yourself, then fine-tune and align one. The math is taught through code, with no calculus.",
     term: "Self-directed",
     status: "designed",
     draft: true,
@@ -117,6 +124,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "react-architecture",
     title: "React + TypeScript Architecture",
+    pitch: "Learn the patterns behind production web apps, taught from apps that are live today.",
     term: "Self-paced",
     status: "designed",
     summary:
@@ -128,6 +136,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "github-scrum",
     title: "GitHub Scrum Intro",
+    pitch: "Learn to work on a software team, not just write code alone.",
     term: "Self-paced",
     status: "designed",
     draft: true,
@@ -143,6 +152,7 @@ export const COURSES: CourseDef[] = [
   {
     id: "gcloud",
     title: "Building Services in Google Cloud",
+    pitch: "Build a web app and the cloud API behind it, and deploy both.",
     term: "Self-paced",
     status: "designed",
     draft: true,
@@ -156,7 +166,7 @@ export const COURSES: CourseDef[] = [
 export const STATUS_LABEL: Record<CourseStatus, string> = {
   teaching: "Teaching now",
   proposed: "Proposed",
-  designed: "Designed",
+  designed: "Ready to offer",
   archived: "Archived",
 };
 

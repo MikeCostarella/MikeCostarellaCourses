@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import DirectoryPage from "./components/DirectoryPage";
 import CoursePage from "./components/CoursePage";
 import AboutPage from "./components/AboutPage";
+import DepartmentsPage from "./components/DepartmentsPage";
 import BuildStamp from "./components/BuildStamp";
 import MainMenu from "./components/MainMenu";
 import { COURSE_BY_ID } from "./data/courses";
@@ -9,13 +10,14 @@ import { SITE } from "./data/site";
 
 // Hash-based routing — no router dependency; works on GitHub Pages project
 // sites without 404 rewriting.
-type Route = { page: "directory" } | { page: "about" } | { page: "course"; id: string };
+type Route = { page: "directory" } | { page: "about" } | { page: "departments" } | { page: "course"; id: string };
 
 function parseHash(): Route {
   const h = window.location.hash;
   const m = /^#\/c\/([a-z0-9-]+)$/.exec(h);
   if (m && COURSE_BY_ID[m[1]]) return { page: "course", id: m[1] };
   if (h === "#/about") return { page: "about" };
+  if (h === "#/departments") return { page: "departments" };
   return { page: "directory" };
 }
 
@@ -44,7 +46,7 @@ export default function App() {
         </a>
         <nav className="top-links">
           <a href="#/" className={route.page === "directory" ? "on" : ""}>Directory</a>
-          <a href="#/about" className={route.page === "about" ? "on" : ""}>How these are built</a>
+          <a href="#/departments" className={route.page === "departments" ? "on" : ""}>For departments</a>
           <a href="https://mikecostarella.github.io/MyWebSite/" target="_blank" rel="noreferrer">
             My Web Site ↗
           </a>
@@ -56,6 +58,7 @@ export default function App() {
         <main className="content content-wide">
           {route.page === "directory" && <DirectoryPage />}
           {route.page === "about" && <AboutPage />}
+          {route.page === "departments" && <DepartmentsPage />}
           {route.page === "course" && <CoursePage course={COURSE_BY_ID[route.id]} />}
         </main>
       </div>

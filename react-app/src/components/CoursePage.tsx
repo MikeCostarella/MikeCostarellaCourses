@@ -1,5 +1,7 @@
 import type { CourseDef } from "../data/types";
-import { STATUS_LABEL, repoUrl } from "../data/courses";
+import { COURSE_BY_ID, repoUrl } from "../data/courses";
+import { pathsFor } from "../data/paths";
+import StatusTags from "./StatusTags";
 
 export default function CoursePage({ course }: { course: CourseDef }) {
   return (
@@ -12,14 +14,27 @@ export default function CoursePage({ course }: { course: CourseDef }) {
         {course.title}
       </h1>
       <p className="mod-subtitle">
-        {course.draft && <><span className="tag tag-draft">Draft</span>{" "}</>}
-        <span className={"tag tag-" + course.status}>{STATUS_LABEL[course.status]}</span>
+        <StatusTags course={course} />
         {course.credits && <> · {course.credits}</>}
       </p>
 
       <section>
+        <p className="cc-pitch">{course.pitch}</p>
         <p>{course.summary}</p>
       </section>
+
+      {pathsFor(course.id).filter((p) => p.steps.length > 1).map((p) => (
+        <section key={p.id}>
+          <h2>Part of the {p.title.toLowerCase()} path</h2>
+          <ol className="path-steps">
+            {p.steps.map((id) => (
+              <li key={id}>
+                {id === course.id ? <b>{COURSE_BY_ID[id].title}</b> : <a href={`#/c/${id}`}>{COURSE_BY_ID[id].title}</a>}
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
 
       <section>
         <h2>Links</h2>
@@ -52,7 +67,7 @@ export default function CoursePage({ course }: { course: CourseDef }) {
 
       <nav className="pager">
         <a href="#/">← Directory</a>
-        <a href="#/about">How these are built →</a>
+        <a href="#/departments">For departments →</a>
       </nav>
     </article>
   );
