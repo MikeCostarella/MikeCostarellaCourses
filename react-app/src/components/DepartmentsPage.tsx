@@ -20,7 +20,7 @@ export default function DepartmentsPage() {
         <p>
           I'm an independent developer and consultant (Costarella Innovations, LLC) in Girard, Ohio, with
           more than 20 years of enterprise software experience in .NET, Azure, Angular, and SQL Server. I
-          build civic-tech web apps for Trumbull County, and I teach in the Computer Science and Information
+          build civic-tech web apps for the Trumbull County Combined Health District, and I teach in the Computer Science and Information
           Technology department at Youngstown State University.
         </p>
       </section>
