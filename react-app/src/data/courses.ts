@@ -150,6 +150,23 @@ export const COURSES: CourseDef[] = [
     tags: ["self-paced", "Scrum", "Git", "GitHub", "teamwork"],
   },
   {
+    id: "angular-dotnet-api",
+    title: "Angular and .NET Web APIs",
+    pitch: "Build both halves of a real web app: an Angular client and the ASP.NET Core API it talks to.",
+    term: "Not yet scheduled",
+    status: "proposed",
+    draft: true,
+    credits: "3 s.h.",
+    summary:
+      "An upper-level undergraduate course on the browser-plus-API application: HTTP and REST, designing the contract with OpenAPI, ASP.NET Core Web APIs with EF Core, querying, errors and Problem Details, an Angular client with signals and HttpClient, CORS, JWT sign-in, caching, payments and webhooks, testing both halves, and deployment. Every module reads WeShopAlot, a complete e-commerce system upgraded to .NET 10 and Angular 22, and the labs build ShelfShare from an empty folder to a deployed app. Thirteen modules over fifteen weeks, thirteen labs, a midterm checkpoint, and team final projects.",
+    siteUrl: `${PAGES}/CS_AngularAndDotNetAPI/`,
+    repo: "CS_AngularAndDotNetAPI",
+    related: [
+      { repo: "WeShopAlot", role: "WeShopAlot, the reference app every module reads (.NET 10 API + Angular 22 client)" },
+    ],
+    tags: ["REST", "Angular", "ASP.NET Core", ".NET", "full-stack"],
+  },
+  {
     id: "gcloud",
     title: "Building Services in Google Cloud",
     pitch: "Build a web app and the cloud API behind it, and deploy both.",
