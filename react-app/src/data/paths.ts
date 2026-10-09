@@ -12,8 +12,8 @@ export const PATHS: LearningPath[] = [
   {
     id: "ai",
     title: "Artificial intelligence",
-    blurb: "From how machines learn, to what's inside a large language model, to building agents on top of one.",
-    steps: ["intro-aiml", "llm-foundations", "agentic-ai"],
+    blurb: "Start from a shared real-world dataset, then learn how machines learn, what's inside a large language model, and how to build agents on top of one.",
+    steps: ["hei-ipeds", "intro-aiml", "llm-foundations", "agentic-ai"],
   },
   {
     id: "swe",

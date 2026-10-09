@@ -25,7 +25,7 @@ export const HIGHLIGHTS: { title: string; body: string }[] = [
   },
   {
     title: "AI taught from the ground up",
-    body: "A three-course path from “what is machine learning” to building AI agents, all runnable on a laptop with no GPU or paid API key.",
+    body: "A four-course path from a shared real dataset and “what is machine learning” to building AI agents, all runnable on a laptop with no GPU or paid API key.",
   },
   {
     title: "Real on-ramps",

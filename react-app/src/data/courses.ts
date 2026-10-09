@@ -122,6 +122,23 @@ export const COURSES: CourseDef[] = [
     tags: ["self-paced", "LLMs", "transformers", "fine-tuning", "PyTorch"],
   },
   {
+    id: "hei-ipeds",
+    title: "Intro to HEI & IPEDS",
+    pitch: "Build the real higher-education dataset that every AI course uses for its projects.",
+    term: "Self-directed",
+    status: "designed",
+    draft: true,
+    summary:
+      "A self-directed companion to the AI courses that turns federal IPEDS data and Ohio's published HEI figures into one documented, tested dataset. Read the sources and their dictionaries, script a re-runnable download, build a SQLite database with a raw layer and a curated layer, write the quality checks that gate a release, reconcile state and federal numbers, write the datasheet, and release a versioned project kit with project briefs for Introduction to AI/ML, LLM Foundations and Agentic AI Foundations. Twelve modules, fourteen lab sittings, standard-library Python and a little SQL. Aggregate public data only.",
+    siteUrl: `${PAGES}/CS_IntroToHEI_IPEDS/`,
+    repo: "CS_IntroToHEI_IPEDS",
+    related: [
+      { repo: "CS_IntroductionToAIML", role: "First course to use the kit", pagesUrl: `${PAGES}/CS_IntroductionToAIML/` },
+      { repo: "CS_AgenticAIFoundations", role: "Agent projects built on the kit", pagesUrl: `${PAGES}/CS_AgenticAIFoundations/` },
+    ],
+    tags: ["self-paced", "data", "SQL", "IPEDS", "Python"],
+  },
+  {
     id: "react-architecture",
     title: "React + TypeScript Architecture",
     pitch: "Learn the patterns behind production web apps, taught from apps that are live today.",
