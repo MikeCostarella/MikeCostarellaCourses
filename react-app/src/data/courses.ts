@@ -175,13 +175,13 @@ export const COURSES: CourseDef[] = [
     draft: true,
     credits: "3 s.h.",
     summary:
-      "An upper-level undergraduate course on the browser-plus-API application: HTTP and REST, designing the contract with OpenAPI, ASP.NET Core Web APIs with EF Core, querying, errors and Problem Details, an Angular client with signals and HttpClient, CORS, JWT sign-in, caching, payments and webhooks, testing both halves, and deployment. Every module reads WeShopAlot, a complete e-commerce system upgraded to .NET 10 and Angular 22, and the labs build ShelfShare from an empty folder to a deployed app. Thirteen modules over fifteen weeks, thirteen labs, a midterm checkpoint, and team final projects.",
+      "An upper-level undergraduate course on the browser-plus-API application: HTTP and REST, designing the contract with OpenAPI, ASP.NET Core Web APIs with EF Core, querying, errors and Problem Details, an Angular client with signals and HttpClient, CORS, JWT sign-in, caching, payments and webhooks, testing both halves, and deployment. Every module reads WeShopAlot, a complete e-commerce system upgraded to .NET 10 whose one API serves two clients with the same features and the same design, an Angular 22 web app and a WPF desktop app, so students compare a browser client and a desktop client calling the same endpoints. The labs build ShelfShare from an empty folder to a deployed app. Thirteen modules over fifteen weeks, thirteen labs, a midterm checkpoint, and team final projects.",
     siteUrl: `${PAGES}/CS_AngularAndDotNetAPI/`,
     repo: "CS_AngularAndDotNetAPI",
     related: [
-      { repo: "WeShopAlot", role: "WeShopAlot, the reference app every module reads (.NET 10 API + Angular 22 client)" },
+      { repo: "WeShopAlot", role: "WeShopAlot, the reference app every module reads (.NET 10 API, Angular 22 web client, WPF desktop client)" },
     ],
-    tags: ["REST", "Angular", "ASP.NET Core", ".NET", "full-stack"],
+    tags: ["REST", "Angular", "ASP.NET Core", ".NET", "WPF", "full-stack"],
   },
   {
     id: "gcloud",
